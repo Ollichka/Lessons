@@ -1,17 +1,19 @@
+package Matrix;
+
 import   java.util.Random;
 
 public class Matrix {
 
     private static Random random = new Random();
 
-    public static void main(String args[]){
+    public void rotate(){
         int m[][] = fill(3);
         int[][] mr = rotateMatrix(m);
         print(m);
         print(mr);
     }
 
-    public static  int[][]  rotateMatrix(int[][] m){
+    public  int[][]  rotateMatrix(int[][] m){
         int [][] mr = new int[m.length][m.length];
         for(int i = 0;i<m.length;i++){
             for(int j = 0;j<m.length;j++){
@@ -21,7 +23,7 @@ public class Matrix {
         return mr;
     }
 
-    public static void print(int[][] m){
+    public  void print(int[][] m){
         for(int i = 0;i<m.length;i++){
             for(int j = 0;j<m.length;j++){
                 System.out.print(m[i][j]+" ");
@@ -30,7 +32,7 @@ public class Matrix {
         }
     }
 
-    public static  int[][]  fill(int n){
+    public  int[][]  fill(int n){
         int [][] m = new int[n][n];
         for(int i = 0;i<m.length;i++){
             for(int j = 0;j<m.length;j++){

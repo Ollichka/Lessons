@@ -1,14 +1,15 @@
+package Piramide;
+
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 public class Piramide {
 
-    public static void main(String args[]){
-        int n = 5;
+    public  void show(int n){
         piramida(n);
 
     }
 
-    public static void piramida(int n){
+    public  void piramida(int n){
         if(n<0||n>10){
             System.out.println("try another height");
             return;
