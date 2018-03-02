@@ -1,6 +1,4 @@
-package Piramide;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
+package Lesson1.Matrix.Piramide;
 
 public class Piramide {
 

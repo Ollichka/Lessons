@@ -1,4 +1,4 @@
-package Piramide;
+package Lesson1.Matrix.Piramide;
 
 
 public class Start {

@@ -1,4 +1,4 @@
-package Matrix;
+package Lesson1.Matrix;
 
 public class Start {
 
