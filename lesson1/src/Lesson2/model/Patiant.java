@@ -1,6 +1,4 @@
-package Lesson2.model;
-
-import java.util.Comparator;
+package lesson2.model;
 
 public class Patiant {
 

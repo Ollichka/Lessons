@@ -1,4 +1,4 @@
-package Lesson1.Numbers;
+package lesson1.numbers;
 
 public class Start {
 

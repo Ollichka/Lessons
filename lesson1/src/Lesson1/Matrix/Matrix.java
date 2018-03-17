@@ -1,4 +1,4 @@
-package Lesson1.Matrix;
+package lesson1.matrix;
 
 import   java.util.Random;
 

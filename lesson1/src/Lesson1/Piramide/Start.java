@@ -1,4 +1,4 @@
-package Lesson1.Piramide;
+package lesson1.piramide;
 
 
 public class Start {

@@ -1,6 +1,6 @@
-package Lesson2.View;
+package lesson2.view;
 
-import Lesson2.model.Patiant;
+import lesson2.model.Patiant;
 
 public class ViewClinic {
 

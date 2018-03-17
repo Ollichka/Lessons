@@ -1,4 +1,4 @@
-package Lesson2.model;
+package lesson2.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;

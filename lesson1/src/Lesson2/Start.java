@@ -1,9 +1,8 @@
-package Lesson2;
+package lesson2;
 
-import Lesson2.Controller.Controller;
-import Lesson2.View.ViewClinic;
-import Lesson2.model.ModelClinic;
-import Lesson2.model.Patiant;
+import lesson2.controller.Controller;
+import lesson2.view.ViewClinic;
+import lesson2.model.ModelClinic;
 
 public class Start {
 
