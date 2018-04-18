@@ -16,17 +16,18 @@ public class Text {
             // open input stream test.txt for reading purpose.
             br= new BufferedReader(new FileReader(new File(fileName)));
             String temp = br.readLine();
-            while (temp != null) {
-                thisLine+=temp;
-                temp = br.readLine();
-            }
             String reg = "[.!//?]";
             Pattern p0 = Pattern.compile(reg);
-            Matcher m0 = p0.matcher(thisLine);
-            int begin = 0;
-            while(m0.find()) {
-                sents.add(new Sentence(thisLine.substring(begin, m0.end())));
-                begin = m0.end();
+            while (temp != null) {
+                thisLine+=temp;
+                Matcher m0 = p0.matcher(thisLine);
+                int begin = 0;
+                while(m0.find()) {
+                    sents.add(new Sentence(thisLine.substring(begin, m0.end())));
+                    begin = m0.end();
+                }
+                thisLine = thisLine.substring(begin,thisLine.length());
+                temp = br.readLine();
             }
 
         } catch(Exception e) {
@@ -46,6 +47,19 @@ public class Text {
                     Pattern p0 = Pattern.compile(first,Pattern.CASE_INSENSITIVE);
                     Matcher m0 = p0.matcher(i.getName());
                     i.setName(first+m0.replaceAll(""));
+                }
+            }
+        }
+    }
+
+    public void replaceLastChar(){
+        for(Sentence s:sents){
+            for(Item i : s.getItems()){
+                if(i instanceof Word){
+                    String last= i.getName().charAt(i.getName().length()-1)+"";
+                    Pattern p0 = Pattern.compile(last,Pattern.CASE_INSENSITIVE);
+                    Matcher m0 = p0.matcher(i.getName());
+                    i.setName(m0.replaceAll("")+last);
                 }
             }
         }
